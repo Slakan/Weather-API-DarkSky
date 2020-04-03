@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Værvarsel</title>
+        <link rel="icon" href="/img/weather.png">
+        <link rel='stylesheet' href='css/styles.css'>
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <p>Bruk denne siden for å få værvarsel</p>
+
+            <form>
+                <input placeholder="Lokasjon">
+                <button>Søk</button>
+            </form>
+            
+            <p id="loading_box"></p>
+
+            <div class="main-data-view">
+                <div class="main-data-view-columns">
+                    <div class="column">
+                        <p>Lokasjon</p>
+                        <img class="weather-pic" src="/img/location.png">
+                        <p id="location-weather-output"></p>
+                    </div>
+                    <div class="column">
+                        <p>Temperatur</p>
+                        <img class="weather-pic" src="/img/temp.png">
+                        <p id="temp-weather-output"></p>
+                    </div>
+                    <div class="column">
+                        <p>Værforhold</p>
+                        <img id="weather-pic-summary" src="/img/weather/rain.png">
+                        <p id="summary-weather-output"></p>
+                    </div>
+                    <div class="column">
+                        <p>Mulighet for regn</p>
+                        <img class="weather-pic" src="/img/rain-meter.png">
+                        <p id="rain-weather-output"></p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+
+        </div>
+        {{>footer}}
+        <script src="./js/app.js"></script>
+    </body>
+</html>
